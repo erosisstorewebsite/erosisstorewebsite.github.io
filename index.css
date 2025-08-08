@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Ensure padding and borders are included in the element's total width and height */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1dae1;
+  text-align: center;
+  padding: 0;
+  direction: rtl;
+  color: #af3467;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: 0;
+
+  /* Ensure no margin around the body */
+}
+
+.icon img {
+  width: 15em;
+  height: auto;
+}
+
+.header3 {
+  font-weight: normal;
+  color: red;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.socials {
+  display: block;
+  margin: 2em auto;
+  font-family: b;
+  font-weight: bold;
+  width: auto;
+}
+
+
+/* Make telegram box extend to parent width */
+#tele {
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 0 0.7em #af3467;
+  text-align: center;
+  border-radius: 1em;
+  color: #af3467;
+  width: 6em;
+  margin: 0 auto;
+  display: block;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}
+
+.eroslink {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 0.9em;
+  color: #af3467;
+  margin: 1em 0;
+  padding: 0 0;
+  display: block;
+}
+
+.eroslink a {
+  color: #ff0000;
+  padding: 0 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#tele::after {
+  content: "";
+  position: absolute;
+  top: -1.2em;
+  right: -1.2em;
+  width: 3em;
+  height: 3em;
+  background-image: url("photos/btnbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+
+/* #tele {
+  box-shadow: 0 0 0.7em #8134AF;
+  background-image: url("photos/btnbg.png");
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+  border-radius: 1em;
+  color: #8134AF;
+  width: 5em auto;
+} */
+
+#prod {
+  box-shadow: 0 0 0.7em #3b5998;
+  background-image: url("photos/btnbg.png");
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+  border-radius: 0.6em;
+  color: #3b5998;
+  padding: 0;
+  font-size: 1.6em;
+  font-family: Harmattan;
+}
+
+.products_sec {
+  padding: 3em;
+}
+
+a {
+  color: #f2ddff;
+  /*border: 0.1em solid #480E8A;*/
+  width: 55%;
+  margin: 0.5em;
+  padding: 0.8em;
+  text-decoration: none;
+}
+
+.space {
+  /*max-width: 25em;*/
+  /*max-height: 50em;*/
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space img {
+  width: auto;
+  height: 53em;
+}
+
+.offer {
+  display: block;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: auto;
+  max-width: 100%;
+  font-size: 2em;
+  padding: 0.5em;
+  border-bottom: 0.2em double;
+  border-top: 0.2em double;
+  color: #af3467;
+}
+
+.offer2 {
+  display: block;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: auto;
+  max-width: 100%;
+  font-size: 2em;
+  padding: 0.5em;
+  margin: 2em 0;
+  background-color: #ebc5d1;
+  background-image: url("photos/cover.png");
+  background-size: cover;
+  border-top: 0.1em solid #af3467;
+  border-bottom: 0.1em solid #af3467;
+  color: #af3467;
+}
+
+.sections {
+  box-shadow: 0 0 0.7em #af3467;
+  text-align: center;
+  border-radius: 1em;
+  color: #af3467;
+  width: 10em;
+  margin: 2em auto;
+  display: block;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}
+
+.Button_gayd {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* Space between buttons */
+  margin: 1em 0;
+  font-size: 1.5em;
+  /* Adjusted for better responsiveness */
+}
+
+.Button_gayd a {
+  text-decoration: none;
+  color: purple;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 25px;
+  border: 2px solid purple;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.Button_gayd a.contact {
+  border-color: red;
+  color: red;
+}
+
+.products_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: repeat;
+  background-image: url("photos/secs.png");
+  background-color: rgb(116, 0, 67);
+  background-position: center;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 2.5em;
+  width: 10em;
+  margin: 0.6em auto;
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+  font-family: Harmattan;
+}
+
+.quotes {
+  font-size: 2em;
+  font-family: Harmattan;
+  margin-bottom: 1em;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Space between product items */
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.product {
+  display: none;
+  background-color: #f0f0f0;
+  border: 2px solid #af3467;
+  border-radius: 10px;
+  padding: 3px;
+  box-sizing: border-box;
+  flex: 1 1 calc(50% - 20px);
+  /* Two products per row with some gap */
+  max-width: calc(50% - 20px);
+  align-items: center;
+  /* Two products per row with some gap */
+}
+
+.productnofilter {
+  display: block;
+  background-color: #f0f0f0;
+  border: 2px solid #af3467;
+  border-radius: 10px;
+  padding: 3px;
+  box-sizing: border-box;
+  flex: 1 1 calc(50% - 20px);
+  /* Two products per row with some gap */
+  max-width: calc(50% - 20px);
+  align-items: center;
+  /* Two products per row with some gap */
+}
+
+.show {
+  display: block;
+}
+
+.product img {
+  width: 100%;
+
+  /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.productnofilter img {
+  width: 100%;
+
+  /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+
+.product-name {
+  font-size: 1.5em;
+  /* Adjusted for better responsiveness */
+  color: #db6683;
+}
+
+.product-price {
+  color: red;
+  font-size: 1.2em;
+  /* Adjusted for better responsiveness */
+}
+
+/* Media queries for responsive design */
+@media (min-width: 576px) {
+
+  /* Small screens, tablets */
+  .product {
+    flex: 1 1 calc(50% - 20px);
+    /* Two products per row */
+    max-width: calc(50% - 20px);
+    /* Two products per row */
+  }
+  /* Small screens, tablets */
+  .productnofilter {
+    flex: 1 1 calc(50% - 20px);
+    /* Two products per row */
+    max-width: calc(50% - 20px);
+    /* Two products per row */
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* Medium screens, small desktops */
+  .product {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Three products per row */
+    max-width: calc(33.33% - 20px);
+    /* Three products per row */
+  }
+  /* Medium screens, small desktops */
+  .productnofilter {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Three products per row */
+    max-width: calc(33.33% - 20px);
+    /* Three products per row */
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* Large screens, desktops */
+  .product {
+    flex: 1 1 calc(25% - 20px);
+    /* Four products per row or more depending on screen size */
+    max-width: calc(25% - 20px);
+    /* Four products per row or more depending on screen size */
+  }
+  .productnofilter {
+    flex: 1 1 calc(25% - 20px);
+    /* Four products per row or more depending on screen size */
+    max-width: calc(25% - 20px);
+    /* Four products per row or more depending on screen size */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Extra small screens */
+  .header {
+    font-size: 2.5em;
+  }
+
+
+
+  .Button_gayd {
+    font-size: 1em;
+  }
+
+  .products_name {
+    font-size: 1.5em;
+  }
+
+  .product-name {
+    font-size: 1em;
+  }
+
+  .product-price {
+    font-size: 0.9em;
+  }
+}
+
+.footer {
+  background-color: #af3467;
+  /* Darker shade of the background color */
+  color: #f1dae1;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  /* Changed from fixed to relative */
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.footer-text {
+  font-size: 1em;
+}
